@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,300&display=swap');
+* {
+    padding: 0;
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    line-height: 1.4;
+    background: rgb(196, 33, 88);
+    background: linear-gradient(90deg, rgba(196, 33, 88, 1) 0%, rgba(255, 243, 198, 1) 100%);
+    color: rgb(31, 31, 31);
+    font-family: 'Exo', sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container {
+    background-color: rgba(132, 59, 181, 0.746);
+    color: #fff;
+    padding: 10px 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-title {
+    font-size: 25px;
+    line-height: 1.447em;
+    margin: 0px;
+    font-family: 'Exo', sans-serif !important;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    position: relative;
+    top: 6rem;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #8653a8;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todos {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: rgb(246, 237, 237);
+}
+
+.todo-item {
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #8653a8;
+    position: relative;
+    display: flex;
+}
+
+.todo-item input {
+    margin-right: 15px;
+}
+
+.todo-item span {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    height: 18px;
+    display: inline-block;
+    text-overflow: "......";
+}
+
+.completed {
+    font-style: italic;
+    text-decoration: line-through;
+    opacity: 0.3;
+    color: rgba(121, 72, 161, 0.712);
+    transition: all 0.3s ease;
+}
+
+.btn-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1px solid rgb(132, 59, 181);
+    padding: 5px 10px;
+    background-color: rgb(248, 245, 242);
+    color: rgb(132, 59, 181);
+    cursor: pointer;
+    outline: none;
+    transition: color, background-color, border-radius;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.btn-remove:hover {
+    color: rgb(248, 245, 242);
+    background-color: rgb(132, 59, 181);
+    border-radius: 50%;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.input-text {
+    flex: 8;
+    font-size: 17px;
+    padding: 10px 15px;
+    background: rgb(151, 97, 144);
+    border: 1px solid rgb(132, 59, 181);
+    color: rgb(255, 255, 255);
+    outline: none;
+    width: 80%;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-text::placeholder {
+    opacity: 0.2;
+}
+
+.input-text:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.input-submit {
+    border: 0.5px solid rgb(132, 59, 181);
+    padding: 5px 10px;
+    background-color: rgb(132, 59, 181);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-submit:hover {
+    background-color: rgb(243, 243, 243);
+    color: rgb(132, 59, 181);
+}
+
+i {
+    pointer-events: none;
+    width: 88% !important;
 }
