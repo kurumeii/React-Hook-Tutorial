@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Hook-Tutorial/static/css/main.e9590203.chunk.css",
+    "main.js": "/React-Hook-Tutorial/static/js/main.fcedcd25.chunk.js",
+    "main.js.map": "/React-Hook-Tutorial/static/js/main.fcedcd25.chunk.js.map",
+    "runtime-main.js": "/React-Hook-Tutorial/static/js/runtime-main.c7136e67.js",
+    "runtime-main.js.map": "/React-Hook-Tutorial/static/js/runtime-main.c7136e67.js.map",
+    "static/css/2.a6d8d413.chunk.css": "/React-Hook-Tutorial/static/css/2.a6d8d413.chunk.css",
+    "static/js/2.1738ff02.chunk.js": "/React-Hook-Tutorial/static/js/2.1738ff02.chunk.js",
+    "static/js/2.1738ff02.chunk.js.map": "/React-Hook-Tutorial/static/js/2.1738ff02.chunk.js.map",
+    "static/js/3.e6ea16e9.chunk.js": "/React-Hook-Tutorial/static/js/3.e6ea16e9.chunk.js",
+    "static/js/3.e6ea16e9.chunk.js.map": "/React-Hook-Tutorial/static/js/3.e6ea16e9.chunk.js.map",
+    "index.html": "/React-Hook-Tutorial/index.html",
+    "static/css/2.a6d8d413.chunk.css.map": "/React-Hook-Tutorial/static/css/2.a6d8d413.chunk.css.map",
+    "static/css/main.e9590203.chunk.css.map": "/React-Hook-Tutorial/static/css/main.e9590203.chunk.css.map",
+    "static/js/2.1738ff02.chunk.js.LICENSE.txt": "/React-Hook-Tutorial/static/js/2.1738ff02.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/React-Hook-Tutorial/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7136e67.js",
+    "static/css/2.a6d8d413.chunk.css",
+    "static/js/2.1738ff02.chunk.js",
+    "static/css/main.e9590203.chunk.css",
+    "static/js/main.fcedcd25.chunk.js"
+  ]
+}
