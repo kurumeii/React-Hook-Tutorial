@@ -15,7 +15,7 @@ body {
 }
 
 .header-container {
-    background-color: rgba(132, 59, 181, 0.746);
+    background-color: var(--main-color);
     color: #fff;
     padding: 10px 15px;
 }
@@ -29,10 +29,10 @@ body {
 
 .container {
     position: relative;
-    top: 6rem;
+    top: 3rem;
     max-width: 500px;
     margin: 0 auto;
-    border: 1px solid #8653a8;
+    border: 1px solid var(--main-color);
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ body {
 .todo-item {
     list-style-type: none;
     padding: 10px;
-    border: 1px solid #8653a8;
+    border: 1px solid var(--main-color);
     position: relative;
     display: flex;
 }
@@ -138,4 +138,58 @@ body {
 i {
     pointer-events: none;
     width: 88% !important;
+}
+
+.footer {
+    height: 50px;
+    background: #c9a13349;
+    color: white;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0 10px 0 10px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+#span {
+    margin-right: 10px;
+}
+
+.dot {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dot:active {
+    height: 37px;
+    width: 37px;
+    border-color: #000000;
+    opacity: 0.7;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.purple {
+    background-color: #9d56af;
+}
+
+:root {
+    --main-color: #843bb5be;
 }

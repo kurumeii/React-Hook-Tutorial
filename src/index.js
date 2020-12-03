@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import TodoApp from "./Components/TodoApp.js";
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import rootReducer from './Store/Reducers'
 import 'semantic-ui-css/semantic.min.css'
 import './App.css';
 
-
+const store = createStore(rootReducer);
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <TodoApp />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
